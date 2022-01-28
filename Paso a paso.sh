@@ -1,5 +1,11 @@
 sudo pacman -S bspwm sxhkd nitrogen alacritty arandr picom neofetch htop 
 
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/visual-studio-code-bin.git
+cd visual-studio-code-bin
+makepkg -si
+
+
 mkdir ~/.config/bspwm
 mkdir ~/.config/sxhkd
 
